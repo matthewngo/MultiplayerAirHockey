@@ -58,7 +58,7 @@ Air Hockey Game
 				startGameInterval = setInterval(start, 5);
 			}
 		}
-		ball.onclick = function() {
+		ball.onmouseover = function() {
 			console.log("hit");
 			turn = true;
 			//speed++;
@@ -70,6 +70,7 @@ Air Hockey Game
 			}
 			console.log("hit2");
 			startPlayInterval = setInterval(play, 5);
+			play();
 			console.log("hit3");
 		};
 

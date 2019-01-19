@@ -16,6 +16,8 @@ var io = socket(server);
 
 io.sockets.on('connection', newConnection);
 
+
+// Gets new connection from client host 
 function newConnection(socket) {
 	console.log('New Connection: ' + socket.id);
 	//console.log(socket); // A lot of information written to console
