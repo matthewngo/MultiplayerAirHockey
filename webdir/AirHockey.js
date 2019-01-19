@@ -16,7 +16,8 @@ Air Hockey Game
 	window.onload = function() {
 		//stuff when website loads
 		//beginGame();
-		socket = io.connect('http://localhost:3000');
+		//socket = io.connect('http://localhost:3000');
+		socket = io.connect('http://192.168.1.11:3000');
 		socket.on('ball', showBallMove);
 		//socket.on('mouse', newDraw) //client recieves
 		//console.log("sending data");

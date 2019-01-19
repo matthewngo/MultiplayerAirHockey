@@ -3,7 +3,10 @@ var express = require('express');
 
 // Makes setup more concise
 var app = express();
-var server = app.listen(3000);
+//var server = app.listen(3000);
+var server = app.listen(3000, '0.0.0.0', function() {
+	console.log('Listening to port: ' + 3000);
+});
 
 app.use(express.static('webdir'));
 
